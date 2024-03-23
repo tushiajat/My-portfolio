@@ -290,11 +290,15 @@
               </div>
               <div class="portfolio-text">
                 <h3>Coffee Shop website</h3>
-                <a class="btn" href="img/img-4.png">+</a>
+                <a
+                  class="btn"
+                  href="https://tushiajat.github.io/Techvio-website/"
+                  >+</a
+                >
               </div>
             </div>
           </div>
-          <div
+          <!-- <div
             class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp"
             data-wow-delay="0.6s"
           >
@@ -310,7 +314,7 @@
               </div>
             </div>
           </div>
-          <div
+           <div
             class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp"
             data-wow-delay="0.8s"
           >
@@ -342,7 +346,7 @@
                 <a class="btn" href="img/b5.jpg" data-lightbox="portfolio">+</a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -361,6 +365,7 @@
                   name="sentMessage"
                   id="contactForm"
                   novalidate="novalidate"
+                  onsubmit="handleForm(event)"
                 >
                   <div class="control-group">
                     <input
@@ -384,7 +389,7 @@
                     />
                     <p class="help-block"></p>
                   </div>
-                  <div class="control-group">
+                  <!-- <div class="control-group">
                     <input
                       type="text"
                       class="form-control"
@@ -394,7 +399,7 @@
                       data-validation-required-message="Please enter a subject"
                     />
                     <p class="help-block"></p>
-                  </div>
+                  </div> -->
                   <div class="control-group">
                     <textarea
                       class="form-control"
@@ -445,6 +450,21 @@
       </div>
     </div>
     <!-- Footer End -->
+    <!-- email js link -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "iZzY4x4aTZnlsHxgj",
+        });
+      })();
+    </script>
+
+    <!-- sweetAlart2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Back to top button -->
     <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
